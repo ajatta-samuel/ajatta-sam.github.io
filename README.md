@@ -1,0 +1,1 @@
+# ajatta-sam.github.io
