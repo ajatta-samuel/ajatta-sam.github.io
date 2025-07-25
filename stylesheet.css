@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.hire-me {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.hire-me:hover {
+  background-color: #ff1a1a;
+}
+
+section {
+  padding: 2rem 1.5rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.about, .skills {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skills ul {
+  list-style-type: square;
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.portfolio h2 {
+  margin-bottom: 1rem;
+}
+
+.video-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-card h3 {
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  background: #f2f2f2;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111;
+  color: white;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .video-card {
+    margin-bottom: 0;
+  }
+}
